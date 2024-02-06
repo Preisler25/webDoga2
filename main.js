@@ -36,8 +36,7 @@ const f3 = () => {
     button.addEventListener("click", () => {
         const dice1 = Math.floor(Math.random() * 6) + 1;
         const dice2 = Math.floor(Math.random() * 6) + 1;
-        dicethrows.push(dice1);
-        dicethrows.push(dice2);
+        dicethrows.push(dice1 + dice2);
         dicethrows.sort((a, b) => b - a);
         p.textContent = dicethrows.join(", ");
     });
