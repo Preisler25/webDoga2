@@ -3,6 +3,8 @@ const getFirstVowel = (arr) => {
     const result = arr.filter(name => vowels.includes(name[0].toLowerCase()));
     return result;
 }
+
+//feladat 1 bemenet names
 const f1 =(names) => {
     res = getFirstVowel(names);
 
@@ -13,6 +15,7 @@ const f1 =(names) => {
     document.body.appendChild(p);
 }
 
+//feladat 2 bemenet quotes
 const f2 = (quotes) => {
     const stringQuotes = quotes.map(quote => `“${quote.quote}” – ${quote.author}`);
     const div = document.getElementById("quotes");
